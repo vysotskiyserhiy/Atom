@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		2A04C6322007666A00E76676 /* Atom.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A04C6302007666A00E76676 /* Atom.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2A04C6392007667800E76676 /* Atomic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A04C6382007667800E76676 /* Atomic.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2A04C62D2007666A00E76676 /* Atom.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Atom.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A04C6302007666A00E76676 /* Atom.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Atom.h; sourceTree = "<group>"; };
 		2A04C6312007666A00E76676 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A04C6382007667800E76676 /* Atomic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Atomic.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +48,7 @@
 		2A04C62F2007666A00E76676 /* Atom */ = {
 			isa = PBXGroup;
 			children = (
+				2A04C6382007667800E76676 /* Atomic.swift */,
 				2A04C6302007666A00E76676 /* Atom.h */,
 				2A04C6312007666A00E76676 /* Info.plist */,
 			);
@@ -95,7 +98,8 @@
 				TargetAttributes = {
 					2A04C62C2007666A00E76676 = {
 						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
+						LastSwiftMigration = 0920;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -131,6 +135,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A04C6392007667800E76676 /* Atomic.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,10 +258,11 @@
 		2A04C6362007666A00E76676 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 5W3SMC6NDZ;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -265,7 +271,9 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = vysotskiyserhiy.Atom;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -274,10 +282,11 @@
 		2A04C6372007666A00E76676 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 5W3SMC6NDZ;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -286,6 +295,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = vysotskiyserhiy.Atom;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
