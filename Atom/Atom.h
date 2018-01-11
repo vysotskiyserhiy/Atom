@@ -6,7 +6,7 @@
 //  Copyright © 2018 Serhiy Vysotskiy. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
 //! Project version number for Atom.
 FOUNDATION_EXPORT double AtomVersionNumber;
