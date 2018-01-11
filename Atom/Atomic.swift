@@ -8,28 +8,24 @@
 
 import Foundation
 
-class Atomic<A> {
+public class Atomic<A> {
     private let queue = DispatchQueue(label: UUID().uuidString)
     private var _value: A
 
-    init(_ value: A) {
+    public init(_ value: A) {
         _value = value
     }
 
-    var value: A {
+    public var value: A {
         return queue.sync(flags: .barrier) { _value }
     }
 
-    func map<M>(_ transform: (A) throws -> M) ->M? {
-        return queue.sync(execute: { () -> M? in
-            return try? transform(_value)
-        })
+    public func map<M>(_ transform: (A) throws -> M) ->M? {
+        return queue.sync { try? transform(_value) }
     }
 
     @discardableResult
-    func mutate<M>(_ transform: (inout A) throws -> M) rethrows -> M {
-        return try queue.sync(flags: .barrier) {
-            return try transform(&_value)
-        }
+    public func mutate<M>(_ transform: (inout A) throws -> M) rethrows -> M {
+        return try queue.sync(flags: .barrier) { try transform(&_value) }
     }
 }
