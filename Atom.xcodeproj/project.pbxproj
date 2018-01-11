@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2A04C6322007666A00E76676 /* Atom.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A04C6302007666A00E76676 /* Atom.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2A04C6392007667800E76676 /* Atomic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A04C6382007667800E76676 /* Atomic.swift */; };
+		2A89914D20076A55005D8A90 /* Atom.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 2A89914C20076A55005D8A90 /* Atom.podspec */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -16,6 +17,7 @@
 		2A04C6302007666A00E76676 /* Atom.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Atom.h; sourceTree = "<group>"; };
 		2A04C6312007666A00E76676 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2A04C6382007667800E76676 /* Atomic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Atomic.swift; sourceTree = "<group>"; };
+		2A89914C20076A55005D8A90 /* Atom.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Atom.podspec; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +51,7 @@
 			isa = PBXGroup;
 			children = (
 				2A04C6382007667800E76676 /* Atomic.swift */,
+				2A89914C20076A55005D8A90 /* Atom.podspec */,
 				2A04C6302007666A00E76676 /* Atom.h */,
 				2A04C6312007666A00E76676 /* Info.plist */,
 			);
@@ -125,6 +128,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A89914D20076A55005D8A90 /* Atom.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
