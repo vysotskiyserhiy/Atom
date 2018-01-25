@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'Atom'
-  s.version          = '0.1.2'
+  s.version          = '0.1.3'
   s.summary          = 'Create Atomic (thread safe) values in swift. Improved version of objc.io Atomic'
   s.homepage         = 'https://github.com/vysotskiyserhiy/Atom.git'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
