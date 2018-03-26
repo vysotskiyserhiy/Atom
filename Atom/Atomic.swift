@@ -17,18 +17,10 @@ public class Atomic<A> {
     }
 
     public var value: A {
-        set {
-            mutate {
-                $0 = newValue
-            }
-        }
-        
-        get {
-            return queue.sync(flags: .barrier) { _value }
-        }
+        return queue.sync(flags: .barrier) { _value }
     }
 
-    public func map<M>(_ transform: (A) throws -> M) ->M? {
+    public func map<M>(_ transform: (A) throws -> M) -> M? {
         return queue.sync { try? transform(_value) }
     }
 
