@@ -15,7 +15,6 @@
 /* Begin PBXFileReference section */
 		2A04C62D2007666A00E76676 /* Atom.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Atom.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A04C6302007666A00E76676 /* Atom.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Atom.h; sourceTree = "<group>"; };
-		2A04C6312007666A00E76676 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2A04C6382007667800E76676 /* Atomic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Atomic.swift; sourceTree = "<group>"; };
 		2A89914C20076A55005D8A90 /* Atom.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Atom.podspec; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -53,7 +52,6 @@
 				2A04C6382007667800E76676 /* Atomic.swift */,
 				2A89914C20076A55005D8A90 /* Atom.podspec */,
 				2A04C6302007666A00E76676 /* Atom.h */,
-				2A04C6312007666A00E76676 /* Info.plist */,
 			);
 			path = Atom;
 			sourceTree = "<group>";
