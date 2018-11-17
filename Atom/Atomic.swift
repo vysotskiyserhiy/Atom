@@ -24,4 +24,8 @@ public class Atomic<A> {
     public func mutate<M>(_ transform: (inout A) throws -> M) rethrows -> M {
         return try queue.sync(flags: .barrier) { try transform(&_value) }
     }
+    
+    public func set(value: A) {
+        mutate({ $0 = value })
+    }
 }
