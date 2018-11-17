@@ -28,4 +28,8 @@ public class Atomic<A> {
     public func set(value: A) {
         mutate({ $0 = value })
     }
+    
+    public func update<P>(keyPath: WritableKeyPath<A, P>, with new: P) {
+        mutate { $0[keyPath: keyPath] = new }
+    }
 }
